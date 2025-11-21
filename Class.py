@@ -7,11 +7,11 @@ class Student:
     def introduce(self):
         print('Em ten la',self.name,'.Em nam nay',self.age)
 
-    def calculate_person_average_score(self):
+    def diem_trung_binh(self):
         s=sum(self.score.values())
         print('Diem trung binh cua',self.name,'la',s/len(self.score))
 
-    def calculate_class_average_score(students):
+    def diem_trung_binh_lop(students):
         if not students:
             print('Loi')
         s = 0
@@ -29,5 +29,5 @@ s3 = Student("Cuong", 16, {'Toan': 10, 'Anh': 9, 'Vam': 9})
 students = [s1, s2, s3]
 
 s1.introduce()
-Student.calculate_person_average_score(s1)
-Student.calculate_class_average_score(students)
+Student.diem_trung_binh(s1)
+Student.diem_trung_binh_lop(students)
